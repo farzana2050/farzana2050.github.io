@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textEventsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Events" />
+
+    <EditText
+        android:id="@+id/editEventName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Event Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editEventDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Event Date"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editEventTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Event Time" />
+
+    <Button
+        android:id="@+id/buttonAddEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Event" />
+
+    <EditText
+        android:id="@+id/editDeleteId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Event ID to Delete"
+        android:inputType="number" />
+
+
+
+    <Button
+        android:id="@+id/buttonDeleteEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Event" />
+
+    <EditText
+        android:id="@+id/editUpdateId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Event ID to Update"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonUpdateEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Event" />
+
+    <TextView
+        android:id="@+id/textEvents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saved Events will appear here"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
