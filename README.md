@@ -15,12 +15,12 @@ In general, the Computer Science program has equipped me with a wider understand
 
 ## Code Review
 
-The code review demonstrates my ability to analyze existing software and identify opportunities for improvement before implementing changes. During the review, I examined the structure, functionality, algorithms, data structures, database operations, security considerations, and maintainability of selected artifacts.
 
-The review provided the foundation for the enhancements presented in this ePortfolio.
 
-**Code Review Video:** Link will be added here.
 
+The code review provides an overview of the original artifacts, identifies areas for improvement, and explains the planned enhancements for software design and engineering, algorithms and data structures, and databases.
+
+[Watch the Code Review Video](https://drive.google.com/file/d/1-g-p50hRc1Crou2ZinXY5xMJqyOLWifa/view?usp=drive_link)
 ---
 
 ## Software Design and Engineering
