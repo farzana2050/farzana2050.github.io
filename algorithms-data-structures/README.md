@@ -38,6 +38,6 @@ The enhancement of the Treasure Hunt Game focused on improving the algorithmic b
 
 During the enhancement process, I worked with experience replay, neural-network training, action selection, exploration versus exploitation, and model evaluation. These improvements strengthened the training process and demonstrated how algorithms and data structures can be used together to solve a complex computational problem.
 
-One of the challenges I encountered was ensuring that the training process executed correctly in the development environment. Testing and debugging helped me identify issues and verify the behavior of the enhanced solution. After the enhancement, the agent successfully completed the maze evaluation and demonstrated the expected learned behavior.
+One of the challenges I encountered was ensuring that the training process executed correctly in the development environment. Testing and debugging helped me identify issues and verify the behavior of the enhanced solution. After the enhancement, the agent completed the maze evaluation and demonstrated the expected learned behavior.
 
 This enhancement strengthened my understanding of reinforcement learning, algorithmic decision making, debugging, and the importance of evaluating a computing solution rather than simply implementing it. It demonstrates progress toward the CS 499 program outcome of designing and evaluating computing solutions using algorithmic principles and appropriate computer science practices.
