@@ -5,6 +5,9 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 
 public class DatabaseHelper extends SQLiteOpenHelper {
@@ -47,7 +50,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         ContentValues values = new ContentValues();
         values.put("username", username);
-        values.put("password", password);
+        values.put("password", hashPassword(password));
 
         long result = db.insert("users", null, values);
 
@@ -59,7 +62,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         Cursor cursor = db.rawQuery(
                 "SELECT * FROM users WHERE username=? AND password=?",
-                new String[]{username, password});
+                new String[]{username, hashPassword(password)});
+
+
 
         boolean exists = cursor.getCount() > 0;
         cursor.close();
@@ -104,6 +109,32 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         int result = db.delete("events", "id=?", new String[]{String.valueOf(id)});
 
         return result > 0;
+    }
+    private String hashPassword(String password) {
+        try {
+            MessageDigest digest = MessageDigest.getInstance("SHA-256");
+
+            byte[] hash = digest.digest(
+                    password.getBytes(StandardCharsets.UTF_8)
+            );
+
+            StringBuilder hexString = new StringBuilder();
+
+            for (byte b : hash) {
+                String hex = Integer.toHexString(0xff & b);
+
+                if (hex.length() == 1) {
+                    hexString.append('0');
+                }
+
+                hexString.append(hex);
+            }
+
+            return hexString.toString();
+
+        } catch (NoSuchAlgorithmException e) {
+            throw new RuntimeException("SHA-256 algorithm is not available", e);
+        }
     }
 
 }

@@ -88,7 +88,14 @@ public class EventGridActivity extends AppCompatActivity {
                 return;
             }
 
-            int id = Integer.parseInt(idText);
+            int id;
+
+            try {
+                id = Integer.parseInt(idText);
+            } catch (NumberFormatException e) {
+                Toast.makeText(this, "Event ID must be a number", Toast.LENGTH_SHORT).show();
+                return;
+            }
             boolean deleted = databaseHelper.deleteEvent(id);
 
             if (deleted) {
@@ -112,7 +119,14 @@ public class EventGridActivity extends AppCompatActivity {
                 return;
             }
 
-            int id = Integer.parseInt(idText);
+            int id;
+
+            try {
+                id = Integer.parseInt(idText);
+            } catch (NumberFormatException e) {
+                Toast.makeText(this, "Event ID must be a number", Toast.LENGTH_SHORT).show();
+                return;
+            }
 
             boolean updated = databaseHelper.updateEvent(id, eventName, eventDate, eventTime);
 
