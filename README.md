@@ -31,9 +31,9 @@ The enhancement reflects software engineering practices such as modular design, 
 
 ### Artifact Materials
 
-- Original Artifact — link will be added
-- Enhanced Artifact — link will be added
-- Enhancement Narrative — link will be added
+- [View Software Design and Engineering Enhancement](software-design/)
+- [Original Artifact](software-design/original/)
+- [Enhanced Artifact](software-design/enhanced/)
 
 ---
 
@@ -45,9 +45,9 @@ The enhancement demonstrates my ability to work with algorithmic problem solving
 
 ### Artifact Materials
 
-- Original Treasure Hunt Game — link will be added
-- Enhanced Treasure Hunt Game — link will be added
-- Enhancement Narrative — link will be added
+- [View Algorithms and Data Structures Enhancement](algorithms-data-structures/)
+- [Original Artifact](algorithms-data-structures/original/)
+- [Enhanced Artifact](algorithms-data-structures/enhanced/)
 
 ---
 
@@ -59,9 +59,9 @@ The enhanced version improves database interaction through stronger input valida
 
 ### Artifact Materials
 
-- Original CRUD Python Module — link will be added
-- Enhanced CRUD Python Module — link will be added
-- Database Enhancement Narrative — link will be added
+- [View Databases Enhancement](databases/)
+- [Original Artifact](databases/original/)
+- [Enhanced Artifact](databases/enhanced/)
 
 ---
 
